@@ -145,3 +145,24 @@ TextButton.MouseButton1Click:Connect(
 UICorner_2.Parent = TextButton
 Frame.Active = true
 Frame.Draggable = true
+
+-- Function to create a rainbow effect for TextButton text color
+local function RainbowText()
+    local hue = 0
+    while true do
+        hue = hue + 5 -- Increase hue change per iteration for faster effect
+        if hue > 360 then
+            hue = 0
+        end
+        TextButton.TextColor3 = Color3.fromHSV(hue / 360, 1, 1)
+        wait(0.01) -- Decrease wait time for faster effect
+    end
+end
+
+-- Start the rainbow effect
+spawn(RainbowText)
+
+-- Function to hide the loading screen after a certain duration
+local function HideLoadingScreen()
+    LoadingScreen:Destroy()
+end
