@@ -120,7 +120,7 @@ TextButton.MouseButton1Click:Connect(
     function()
         state = not state
         if not state then
-            TextButton.Text = "Meow² OFF"
+            TextButton.Text = "Meow² ON"
             CamlockState = true
             enemy = FindNearestEnemy()
             OrionLib:MakeNotification({
