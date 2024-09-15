@@ -127,7 +127,7 @@ TextButton.MouseButton1Click:Connect(
     Name = "Air This Motha fucker",
     Content = "Break her/his Knuckles",
     Image = "rbxassetid://4483345998",
-    Time = 7
+    Time = 4
 })
         else
             TextButton.Text = "Oh hell naw"
@@ -137,7 +137,7 @@ TextButton.MouseButton1Click:Connect(
     Name = "Nigga why'd u Stop Lockin",
     Content = "Tired of lockin??",
     Image = "rbxassetid://4483345998",
-    Time = 7
+    Time = 4
 })
         end
     end
