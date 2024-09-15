@@ -68,17 +68,17 @@ Mouse.KeyDown:Connect(function(k)
             end    
     end    
  end)
-local BladLock = Instance.new("ScreenGui")
+local Skid = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local Logo = Instance.new("ImageLabel")
 local TextButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 --Properties:
-BladLock.Name = "BlackGuy"
-BladLock.Parent = game.CoreGui
-BladLock.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Frame.Parent = BladLock
+Skid.Name = "Goated"
+Skid.Parent = game.CoreGui
+Skid.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame.Parent = Skid
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
@@ -120,7 +120,7 @@ TextButton.MouseButton1Click:Connect(
     function()
         state = not state
         if not state then
-            TextButton.Text = "Lock Mode"
+            TextButton.Text = "Meow² OFF"
             CamlockState = true
             enemy = FindNearestEnemy()
             OrionLib:MakeNotification({
@@ -130,7 +130,7 @@ TextButton.MouseButton1Click:Connect(
     Time = 4
 })
         else
-            TextButton.Text = "Oh hell naw"
+            TextButton.Text = "Meow² OFF"
             CamlockState = false
             enemy = nil
             OrionLib:MakeNotification({
